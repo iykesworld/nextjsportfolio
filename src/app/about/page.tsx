@@ -6,7 +6,7 @@ const About = () => {
     <div className='container max-w-7xl mx-auto py-20'>
       <h1 className='text-4xl font-bold text-center mb-8'>About me</h1>
       <section className='mb-16'>
-        <p className='text-lg text-secondary max-w-3xl text-center mx-auto'>I'm a passionate Full Stack Developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I create seamless user experiences and robust server-side solutions.</p>
+        <p className='text-lg text-secondary max-w-3xl text-center mx-auto'>I&apos;m a passionate Full Stack Developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I create seamless user experiences and robust server-side solutions.</p>
       </section>
       <section className='mb-16'>
         <h2 className='section-title'>Skills</h2>

@@ -22,7 +22,7 @@ const Hero = () => {
             <motion.h1 
             {...fadeInUp}
             transition={{delay: 0.3}}
-            className='text-4xl md:text-6xl font-bold mb-5'>I'm <span className='text-primary'>Iykes Design</span></motion.h1>
+            className='text-4xl md:text-6xl font-bold mb-5'>I&apos;m <span className='text-primary'>Iykes Design</span></motion.h1>
             <motion.p 
             transition={{delay: 0.5}}
             className='text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8'>Full Stack Developer | UI/UX Enthusiast | Open Source Contributor</motion.p>

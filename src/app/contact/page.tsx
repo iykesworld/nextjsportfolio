@@ -1,5 +1,4 @@
 "use client"
-import { error } from 'console';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
@@ -42,6 +41,7 @@ const Contact = () => {
       })
     } catch (error) {
       setStatus("error");
+      console.error("Error sending message", error)
     }
   }
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
@@ -59,7 +59,7 @@ const Contact = () => {
         {/* contact info */}
         <div className='space-y-8'>
           <h2 className='text-2xl font-semibold mb-4'>Get in Touch</h2>
-          <p className='text-secondary md:w-2/3'>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+          <p className='text-secondary md:w-2/3'>I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
           <div className='space-y-4'>
             <div className='flex items-center gap-4'>
               <FaEnvelope className='w-6 h-6 text-primary'/>
