@@ -1,4 +1,5 @@
 "use client"
+import { error } from 'console';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
@@ -26,11 +27,21 @@ const Contact = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
-        }
+        },
+        body: JSON.stringify(formData)
+      })
+
+      if(!response.ok){
+        throw new Error ("Failed to send message");
       }
-      )
+      setStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      })
     } catch (error) {
-      
+      setStatus("error");
     }
   }
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
@@ -118,6 +129,16 @@ const Contact = () => {
           <button className='w-full btn btn-primary'>
             { status === "loading"? "Sending" : "Send Message"}
           </button>
+          {
+            status === "success" && (
+              <p className='text-green-500 text-center'>Message sent successfully</p>
+            )
+          }
+          {
+            status === "error" && (
+              <p className='text-red-500 text-center'>Failed to send message, please try again</p>
+            )
+          }
         </form>
         </div>
       </div>
