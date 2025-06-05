@@ -9,7 +9,7 @@ export const projects: Project[] = [
         technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/e-commerce-website.webp'
+        image: '/e-commerce-website.webp'
     },
     {
         title: 'Task Management App',
@@ -17,7 +17,7 @@ export const projects: Project[] = [
         technologies: ['React', 'Nodes.js', 'Mongo DB', 'Socket.io'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/task-manager.webp'
+        image: '/task-manager.webp'
     },
     {
         title: 'Portfolio Website',
@@ -25,7 +25,7 @@ export const projects: Project[] = [
         technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/portfolio-website.webp'
+        image: '/portfolio-website.webp'
     },
     {
         title: 'Blog Platform',
@@ -33,7 +33,7 @@ export const projects: Project[] = [
         technologies: ['Gatsby', 'GraphQL', 'Contentful'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/blog-website.webp'
+        image: '/blog-website.webp'
     },
     {
         title: 'Weather App',
@@ -41,7 +41,7 @@ export const projects: Project[] = [
         technologies: ['React', 'OpenWeatherMap AP'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/weather-app.webp'
+        image: '/weather-app.webp'
     },
     {
         title: 'Chat Application',
@@ -49,7 +49,7 @@ export const projects: Project[] = [
         technologies: ['React', 'Node.js', 'Socket.io'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/chat-app.webp'
+        image: '/chat-app.webp'
     },
     {
         title: 'Recipe Finder',
@@ -57,7 +57,7 @@ export const projects: Project[] = [
         technologies: ['React', 'Edamam API'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/recipe-finder.webp'
+        image: '/recipe-finder.webp'
     },
     {
         title: 'Expense Tracker',
@@ -65,7 +65,7 @@ export const projects: Project[] = [
         technologies: ['React', 'Firebase'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
-        image: '/public/expense-tracker.webp'
+        image: '/expense-tracker.webp'
     },
 
 ]
